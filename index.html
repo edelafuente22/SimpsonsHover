@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simpsons cards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#image1").hover(function(){
+                    this.src = 'images/img1-after.jpg';
+                }, function() {
+                    this.src = 'images/img1-before.jpg';
+                });
+
+                $("#image2").hover(function(){
+                    this.src = 'images/img2-after.jpg';
+                }, function() {
+                    this.src = 'images/img2-before.jpg';
+                });
+
+                $("#image3").hover(function(){
+                    this.src = 'images/img3-after.jpg';
+                }, function() {
+                    this.src = 'images/img3-before.jpg';
+                });
+
+                $("#image4").hover(function(){
+                    this.src = 'images/img4-after.jpg';
+                }, function() {
+                    this.src = 'images/img4-before.jpg';
+                });
+
+            })
+        </script> 
+    </head>
+    <body>
+        <div id="images">
+            <img id="image1" src="images/img1-before.jpg" data-num="1">
+            <img id="image2" src="images/img2-before.jpg" data-num="2">
+            <img id="image3" src="images/img3-before.jpg" data-num="3">
+            <img id="image4" src="images/img4-before.jpg" data-num="4">
+        </div>
+       
+        
+    </body>
+</html>
